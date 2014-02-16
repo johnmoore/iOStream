@@ -3,8 +3,7 @@
 
 Presenting mobile apps is a pain in the ass. Collaborating remotely with mobile developers is even worse. Don't let clunky hardware cameras and unrealistic simulators detract from your project or product. Introducing iOStream. Mobile presentations and collaboration made easy.
 
-### Installation
-====
+## Installation
 
 Add all of the files into your XCode project, then add the following code to your application delegate:
 
@@ -29,8 +28,7 @@ Add all of the files into your XCode project, then add the following code to you
 }
 ```
 
-### View or share your app's stream
-====
+## View or share your app's stream
 
 You will be given a unique code every time you launch your app. Share your code with others to allow them to view your app's stream.
 
