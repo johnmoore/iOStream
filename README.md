@@ -5,7 +5,7 @@ Presenting mobile apps is a pain in the ass. Collaborating remotely with mobile 
 
 ## Installation
 
-Add all of the files into your XCode project, then add the following code to your application delegate:
+In order to use iOStream, you must link your binary with libicucore.dylib and CFNetwork.framework. Then import the folder iOStreamClient into your XCode project, and add the following code to your application delegate files:
 
 (In AppDelegate.h)
 ```objective-c
