@@ -32,7 +32,7 @@ Add all of the files into your XCode project, then add the following code to you
 
 You will be given a unique code every time you launch your app. Share your code with others to allow them to view your app's stream.
 
-You can enter a code at http://fuckitstreamit.com/stream. For sharing codes, you can set the "code" GET variable as shown below. Be sure to replace XXXXXXXX with the code you receive from your app.
+You can enter a code at http://fuckitstreamit.com/stream.html. For sharing codes, you can set the "code" GET variable as shown below. Be sure to replace XXXXXXXX with the code you receive from your app.
 
-> http://fuckitstreamit.com/stream?code=XXXXXXXX
+> http://fuckitstreamit.com/stream.html?code=XXXXXXXX
 
