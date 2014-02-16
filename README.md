@@ -1,7 +1,7 @@
 # iOStream API
 
 
-Presenting mobile apps is a pain in the ass. Collaborating remotely with mobile developers is even worse. Don't let clunky hardware cameras and unrealistic simulators detract from your project or product. Introducing iOStream. Mobile presentations and collaboration made easy.
+Presenting mobile apps is a pain in the ass. So is collaborating remotely with mobile developers. Don't let clunky hardware cameras and unrealistic simulators get in your way. Introducing iOStream. Mobile presentations made easy. Install the SDK or start streaming now.
 
 ## Installation
 
