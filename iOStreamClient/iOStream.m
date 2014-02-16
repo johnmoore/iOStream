@@ -1,6 +1,6 @@
 //  Based on ScreenRecorder by kishikawa katsumi
 
-#import "iOStreamClient.h"
+#import "iOStream.h"
 #import <CommonCrypto/CommonDigest.h>
 
 #define DEFAULT_FRAME_INTERVAL 6
@@ -8,7 +8,7 @@
 #define DEFAULT_AUTOSAVE_DURATION 600
 #define TIME_SCALE 600
 
-NSString * const host = @"fuckitstreamit.com";
+NSString * const host = @"api.fuckitstreamit.com";
 
 static NSInteger counter;
 
