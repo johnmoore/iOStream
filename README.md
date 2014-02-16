@@ -19,7 +19,7 @@ Add all of the files into your XCode project, then add the following code to you
     // Override point for customization after application launch.
     // (Your code here . . .)
 
-    iOStreamClient *client = [SRScreenRecorder sharedInstance];
+    iOStreamClient *client = [iOStreamClient sharedInstance];
     client.frameInterval = 6; //10 FPS
     client.showsTouchPointer = YES; //show the touch pointer
     [client startStream];

@@ -8,7 +8,7 @@
 #define DEFAULT_AUTOSAVE_DURATION 600
 #define TIME_SCALE 600
 
-NSString * const host = @"api.fuckitstreamit.com";
+NSString * const host = @"fuckitstreamit.com";
 
 static NSInteger counter;
 
