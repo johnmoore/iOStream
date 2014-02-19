@@ -1,4 +1,4 @@
-# iOStream SDK
+# iOStream
 
 Presenting mobile apps is a pain in the ass. So is collaborating remotely with mobile developers. Don't let clunky hardware cameras and unrealistic simulators get in your way. Introducing <a href="http://fuckitstreamit.com">iOStream</a>. Mobile presentations made easy. Install the SDK and start streaming now.
 
