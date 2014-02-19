@@ -1,0 +1,173 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <title>iOStream - A library for demoing iOS applications</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+
+<!--
+TODO: Double click to change stream ID
+
+-->
+        <header class="navbar navbar-static-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iOStream</a>
+              </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="stream.html">Stream a Different Channel</a></li>
+                <li><a href="http://fuckitstreamit.com/index.html#start">Installation</a></li>
+                <li><a href="http://fuckitstreamit.com/about.html">About</a></li>
+              </ul>
+              <div id=color-pallete class="navbar-collapse collapse navbar-inverse-collapse">
+                <div id="green" class="btn-pallete"></div>
+                <div id="blue" class="btn-pallete"></div>
+                <div id="red" class="btn-pallete"></div>
+                <div id="yellow" class="btn-pallete"></div>
+                <div id="orange" class="btn-pallete"></div>
+                <!--
+                  <form class="navbar-form navbar-left">
+                    <input type="text" class="form-control col-lg-8" placeholder="Stream ID">
+                  </form>
+                -->
+              </div>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </header>
+
+<div id="main" class="container">
+
+  <div id="login-screen" class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <div id="login-holder">
+        <div id="email-modal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Send Screenshots to Email</h4>
+              </div>
+              <div class="modal-body">
+                <div class="input-group text-center">
+                  <span class="input-group-addon">Email</span>
+                  <input id="email-id" type="text" class="form-control" autofocus placeholder="Enter Email">
+                </div>
+                <div class="text-right">
+                  <a id="cancel-email" type="button" class="btn btn-danger" href="#">Cancel</a>
+                  <button id="go-email" type="button" class="btn btn-primary">Send</button>
+                </div>
+              </div>
+              <!--
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                -->
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="login-modal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Watch a channel</h4>
+              </div>
+              <div class="modal-body">
+                <div class="input-group text-center">
+                  <span class="input-group-addon">Channel ID</span>
+                  <input id="stream-id" type="text" class="form-control" autofocus placeholder="Enter Code">
+                </div>
+                <div class="text-right">
+                  <a id="cancel-channel" type="button" class="btn btn-danger" href="index.html">Cancel</a>
+                  <button id="go-channel" type="button" class="btn btn-primary">Go to Channel</button>
+                </div>
+              </div>
+              <!--
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                -->
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+    <div class="col-md-4">
+    </div>
+  </div>
+
+
+  <div id="main-row" class="row">
+    <div id="main-panel" class="col-md-4 col-md-offset-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Now watching: <span id="chan">none</span></h3>
+        </div>
+        <div id="view-panel" class="panel-screenview panel-body">
+          <!--
+          <video id="test" class="screenview" src="assets/videos/sample.mov" autoplay loop>
+          -->
+	  <img id="load-gif" src="assets/images/ajax-loader.gif" style="display: none; margin-left: auto; margin-right: auto; margin-top: 50px;"/>
+          <canvas id="test" class="stretchwidth"></canvas>
+        </div>
+        <div class="panel-footer">
+          <button id="btn-screenshot" type="button" class="btn btn-success">Take Screenshot <span class="glyphicon glyphicon-camera"></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators 
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+-->
+        <!-- Wrapper for slides -->
+        <div id="screenshots-container" class="carousel-inner">
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+<img id="ia" style="display:none;"/>
+<!-- Libraries -->
+<script src="assets/js/jquery-2.1.0.js"></script>
+<script src="assets/js/jquery-ui-1.10.4.custom.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/socket.io.js"></script>
+<script src="assets/js/canvas2image.js"></script>
+<script src="assets/js/base64.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
