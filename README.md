@@ -4,7 +4,7 @@ Presenting mobile apps is a pain in the ass. So is collaborating remotely with m
 
 ## About
 
-iOStream was created by Calvin Chan, Shenil Dodhia, Earl Lee, and John Moore at the PennApps Spring 2014 hackathon over the course of 36 hours.
+iOStream was created by <a href="https://github.com/thecalvinchan/">Calvin Chan</a>, <a href="https://github.com/shenil">Shenil Dodhia</a>, <a href="https://github.com/earllee">Earl Lee</a>, and <a href="https://github.com/johnmoore">John Moore</a> at the PennApps Spring 2014 hackathon over the course of 36 hours.
 
 ## Installation
 
