@@ -59,4 +59,6 @@ We welcome your help in improving iOStream. It started as a quick-and-dirty hack
 
 ## License
 
-We are releasing iOStream under the <a href="http://opensource.org/licenses/RPL-1.5">Reciprocal Public License v1.5</a>. You are free to do what you want with the source, but we ask that you release any modified versions as open-source software to the public.
+We are releasing iOStream (website, server, and iOS SDK) under the <a href="http://opensource.org/licenses/RPL-1.5">Reciprocal Public License v1.5</a>. You are free to do what you want with the source, but we ask that you release any modified versions as open-source software to the public.
+
+Thanks to Philipp Kyeck (http://beta-interactive.de) for the Objective-C iOS library and Kishikawa Katsumi (http://kishikawakatsumi.com/) for the initial basis of the screen-recording iOS code, both of which were licensed under the MIT license (see /sdk for a copy).
