@@ -41,7 +41,11 @@ You can enter a code at http://fuckitstreamit.com/stream.html. For sharing codes
 
 ## Host your own version
 
-You can host your own version using the Node.js server in the /server folder of this repo. You will need to use npm to install the necessary modules if you haven't already. Then, edit the "host" constant in sdk/iOStreamClient/iOStream.m to point to your server.
+You can host your own version using the Node.js server in the /server folder of this repo. You will need to use npm to install the necessary modules if you haven't already. Then, edit sdk/iOStreamClient/iOStream.m to point to your server:
+
+```objective-c
+NSString * const host = @"api.yourhost.com";
+```
 
 You will need to host the web app component as well. The source is located under the /website directory. Please note that you will need to edit /website/assets/js/main.js to connect to your own server instead of ours:
 
