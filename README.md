@@ -1,6 +1,6 @@
-# iOStream
+#iOStream
 
-Presenting mobile apps is a pain in the ass. So is collaborating remotely with mobile developers. Don't let clunky hardware cameras and unrealistic simulators get in your way. Introducing <a href="http://fuckitstreamit.com">iOStream</a>. Mobile presentations made easy. Install the SDK and start streaming now.
+Presenting mobile apps is a pain in the ass. So is collaborating remotely with mobile developers. Don't let clunky hardware cameras and unrealistic simulators get in your way. Introducing <a href="http://iostream.io">iOStream</a>. Mobile presentations made easy. Install the SDK and start streaming now.
 
 ## About
 
@@ -35,9 +35,9 @@ In order to use iOStream, you must link your application with libicucore.dylib, 
 
 You will be given a unique code every time you launch your app. Share your code with others to allow them to view your app's stream.
 
-You can enter a code at http://fuckitstreamit.com/stream.html. For sharing codes, you can set the "channel" GET variable as shown below. Be sure to replace XXXXXXXX with the code you receive from your app.
+You can enter a code at http://iostream.io/stream.html. For sharing codes, you can set the "channel" GET variable as shown below. Be sure to replace XXXXXXXX with the code you receive from your app.
 
-> http://fuckitstreamit.com/stream.html?channel=XXXXXXXX
+> http://iostream.io/stream.html?channel=XXXXXXXX
 
 ## Host your own version
 
