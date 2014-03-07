@@ -12,7 +12,7 @@ In order to use iOStream, you must link your application with libicucore.dylib, 
 
 (In AppDelegate.h)
 ```objective-c
-#import "iOStreamClient.h"
+#import "iOStream.h"
 ```
 
 (In AppDelegate.m)
